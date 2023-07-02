@@ -172,9 +172,3 @@ button:hover {
 .credit a:hover {
   color: #74b816;
 }
-
-.credit {
-  position: absolute;
-  right: 500px;
-  bottom: 12px;
-}
