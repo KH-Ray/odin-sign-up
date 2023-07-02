@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Sign-up Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      <img class="leaves" src="leaves.avif" alt="leaves" />
+      <div>
+        <img class="odin-logo" src="odin-logo.png" alt="odin-logo" />
+        <h1>ODIN</h1>
+      </div>
+    </aside>
+
+    <main>
+      <section class="top">
+        <h2>
+          This is not real online service! You know you need something like this
+          in your life to help you realize your deepest dreams.
+          <br />
+          Sign up <em>now</em> to get started.
+        </h2>
+
+        <h2>You <em>know</em> you want to.</h2>
+      </section>
+
+      <section class="sign-up">
+        <h2>Let's do this</h2>
+
+        <form>
+          <div class="form-main">
+            <div class="form-left">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" required />
+
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" required />
+
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required />
+              <span></span>
+            </div>
+
+            <div class="form-right">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" required />
+
+              <label for="phone-number">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                required
+              />
+
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="bottom">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <p class="credit">
+      Photo by
+      <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on
+      <a href="https://unsplash.com/">Unsplash</a>
+    </p>
+  </body>
+</html>

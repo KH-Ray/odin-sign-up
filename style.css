@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(Norse-Bold.otf) format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {
+  position: relative;
+}
+
+aside div {
+  width: 100%;
+  top: 20%;
+  left: 0;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 24px 0;
+}
+
+main {
+  padding-top: 150px;
+  background-color: #f1f3f5;
+}
+
+section {
+  padding-left: 48px;
+}
+
+form {
+  margin-top: 24px;
+}
+
+h1 {
+  font-size: 130px;
+  font-family: "Norse Bold", sans-serif;
+  display: inline;
+  color: #fff;
+  vertical-align: top;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #212529;
+}
+
+div input {
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 2px;
+  margin-bottom: 24px;
+  border: 2px solid #e5e7eb;
+  border-radius: 3px;
+  width: 250px;
+  height: 30px;
+}
+
+input + span {
+  position: relative;
+}
+
+input + span::after {
+  font-size: 0.8rem;
+  position: absolute;
+  margin-top: 2px;
+  top: -26px;
+}
+
+input[name="password"]:invalid + span::after {
+  color: #f03e3e;
+  content: "*Password does not match";
+}
+
+button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  background-color: #596d48;
+  padding: 16px 52px;
+  cursor: pointer;
+}
+
+.top h2 {
+  width: 65%;
+}
+
+.top h2:first-child {
+  margin-bottom: 24px;
+}
+
+.sign-up {
+  margin: 48px 0 0;
+}
+
+.sign-up h2 {
+  padding-top: 24px;
+}
+
+.leaves {
+  width: auto;
+  height: 1000px;
+}
+
+.odin-logo {
+  width: auto;
+  height: 130px;
+}
+
+.form-main {
+  display: flex;
+  gap: 128px;
+  padding: 48px;
+  background-color: #fff;
+  box-shadow: 0 7px 14px #dee2e6;
+  margin-left: -48px;
+}
+
+.form-left,
+.form-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  margin-top: 32px;
+}
+
+.bottom p {
+  font-weight: 400;
+  margin-top: 32px;
+}
+
+.bottom a,
+.credit a {
+  text-decoration: none;
+  color: #596d48;
+  cursor: pointer;
+}
+
+input:focus-visible {
+  outline-color: #1c7ed6;
+}
+
+input[type="password"]:invalid {
+  border: 2px solid #f03e3e;
+}
+
+input[type="password"]:invalid span::after {
+  content: "hello";
+}
+
+button:hover {
+  background-color: #74b816;
+}
+
+.bottom a:hover,
+.credit a:hover {
+  color: #74b816;
+}
+
+.credit {
+  position: absolute;
+  right: 500px;
+  bottom: 12px;
+}

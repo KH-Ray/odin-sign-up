@@ -1,2 +1,3 @@
 # odin-sign-up
-A Simple sign-up form website
+
+A sign-up form design for an imaginary service.
